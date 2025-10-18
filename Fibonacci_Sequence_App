@@ -1,0 +1,31 @@
+package myMain;
+import java.util.Scanner;
+import java.util.Arrays;
+	public class MainClass {
+		static Scanner userinput = new Scanner(System.in);
+		public static void main(String[] args){
+			int [] i;
+			i = new int[32];
+			
+			System.out.print("How many digits of the Fibonacci Sequence would you like to see? (1-32)");
+			int t;
+			t = userinput.nextInt();
+			
+			int s;
+			s = 0;
+			
+			i[0] = 0;
+			i[1] = 1;
+			
+			for (s = 2; s < t; s++) {
+				i[s] = i[s - 1] + i[s - 2];
+				
+			}
+			
+			System.out.println("Your digits of the Fibonacci Sequence are: " + Arrays.toString(Arrays.copyOf(i, t)));
+			}
+			}
+			
+
+		
+ 
